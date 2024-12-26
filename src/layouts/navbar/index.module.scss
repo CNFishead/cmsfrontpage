@@ -1,0 +1,17 @@
+.container {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logoContainer {
+    position: relative;
+    .logo {
+      max-width: 100px;
+
+      @media (prefers-color-scheme: dark) {
+        border-radius: 50%;
+        border: 1px solid white;
+      }
+    }
+  }
+}
