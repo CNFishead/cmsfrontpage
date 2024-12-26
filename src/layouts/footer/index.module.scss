@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2%;
+  padding: 5% 2%;
   background-color: var(--dark);
 
   .logoContainer {
@@ -30,8 +30,22 @@
 .navContainer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
   gap: 10px;
-  text-align: end;
+
+  .subNavContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 10px;
+
+    .title{
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--light);
+      text-decoration: underline;
+    }
+  }
 }

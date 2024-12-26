@@ -15,13 +15,15 @@ const Footer = () => {
       <div className={styles.subContainer}>
         {/* nav items */}
         <div className={styles.navContainer}>
-          <h4>Legal</h4>
-          <Link href="/terms-of-use" className={styles.navItem}>
-            Terms of Use
-          </Link>
-          <Link href="/privacy-policy" className={styles.navItem}>
-            Privacy Policy
-          </Link>
+          <div className={styles.subNavContainer}>
+            <h4 className={styles.title}>Legal</h4>
+            <Link href="/terms-of-use" className={styles.navItem}>
+              Terms of Use
+            </Link>
+            <Link href="/privacy-policy" className={styles.navItem}>
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </div>
