@@ -5,6 +5,10 @@
   align-items: center;
   .logoContainer {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     .logo {
       max-width: 100px;
 

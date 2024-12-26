@@ -10,9 +10,10 @@ const Navbar = () => {
         <Link href="/" passHref>
           <img src="/images/ShepherdsCMSLogo.png" alt="Logo" className={styles.logo} />
         </Link>
+        <h2>ShepherdCMS</h2>
       </div>
       <div className={styles.navContainer}>
-        <Link href="/login" passHref>
+        <Link href="https://auth.shepherdcms.org/signup" passHref>
           <p className={styles.navItem}>Get Started</p>
         </Link>
       </div>

@@ -1,0 +1,38 @@
+$tabwidth: 990px;
+$mobwidth: 600px;
+$mobwidth2: 480px;
+
+@mixin tablet {
+  @media (max-width:#{$tabwidth}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width:#{$mobwidth}) {
+    @content;
+  }
+}
+
+@mixin mobilesm {
+  @media (max-width:#{$mobwidth2}) {
+    @content;
+  }
+}
+
+.backgroundContainers {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 40rem;
+  font-size: 0.9rem;
+}
