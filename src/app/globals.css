@@ -2,6 +2,12 @@
   --background: #ffffff;
   --foreground: #171717;
   --dark: #14171c;
+  --primary: rgb(60, 98, 85);
+  --primary-dark: rgb(19, 58, 44);
+  --primary-light: rgb(92, 138, 122);
+  --secondary: rgb(97, 135, 110);
+  --secondary-dark: rgb(60, 90, 74);
+  --secondary-light: rgb(138, 176, 154);
 }
 
 @media (prefers-color-scheme: dark) {

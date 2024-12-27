@@ -2,6 +2,9 @@ $tabwidth: 990px;
 $mobwidth: 600px;
 $mobwidth2: 480px;
 
+$animation: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+$simple-animation: all 0.2s ease-in-out;
+
 @mixin tablet {
   @media (max-width:#{$tabwidth}) {
     @content;

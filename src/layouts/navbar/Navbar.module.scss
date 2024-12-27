@@ -1,0 +1,233 @@
+@use "@/styles/globals.scss" as *;
+
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 2rem 4rem !important;
+  height: 110px;
+
+  background-color: var(--dark);
+  backdrop-filter: blur(10px);
+
+  z-index: 100;
+  transition: $animation;
+  border-bottom: whitesmoke 1px solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  //Make a gradient
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        max-width: 100px;
+        height: 100%;
+      }
+    }
+    span {
+      font-size: 20px;
+      font-weight: 900;
+      color: white;
+    }
+  }
+  .hamburgerMenu {
+    display: none;
+    opacity: 1;
+    cursor: pointer;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+
+    @include mobile {
+      // display: none;
+      pointer-events: none;
+      top: 0px;
+      opacity: 0;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+
+      transition: $animation;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      height: fit-content;
+      background-color: #ffffffef;
+      backdrop-filter: blur(10px);
+
+      gap: 30px;
+      padding: 50px;
+      z-index: 100;
+
+      &.hamburgerMenuIsOpen {
+        pointer-events: all;
+
+        opacity: 1;
+        top: 80px;
+      }
+    }
+
+    .navItem {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--primary-light);
+      text-decoration: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      height: 100%;
+      cursor: pointer;
+      position: relative;
+
+      &.button {
+        border-radius: 20px;
+        border: rgba(115, 115, 115, 0.257) 1px solid;
+        height: 30px;
+        padding: 0 20px;
+        transition: $animation;
+
+        &:hover {
+          background-color: var(--primary);
+          border: transparent 1px solid;
+
+          color: white;
+        }
+      }
+
+      &.active {
+        // background-color: $color-light;
+        // padding: 10px 20px;
+        // box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        //   rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        // border-radius: 5px;
+
+        font-weight: 900;
+      }
+
+      position: relative;
+    }
+
+    .navDropdown {
+      position: relative;
+      .navDropdownText {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        // padding: 0 20px;
+        cursor: pointer;
+      }
+
+      .navDropdownContent {
+        position: absolute;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: #fff;
+        // backdrop-filter: blur(10px); // border-radius: 10px;
+        border-radius: 10px;
+
+        padding: 10px 20px;
+        left: -20px;
+        width: 140%;
+        top: 40px;
+
+        z-index: 100;
+        opacity: 0;
+
+        font-weight: 500;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        .navLink {
+          &:hover {
+            &::after {
+              border: 0px !important;
+            }
+          }
+        }
+      }
+      &.navLink {
+        &:hover {
+          &::after {
+            border: 0px !important;
+          }
+        }
+      }
+      .dropdownArrow {
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      &.navDropdownActive {
+        .navDropdownContent {
+          opacity: 1;
+        }
+        .dropdownArrow {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &.touchingTop {
+    background-color: transparent;
+    color: white !important;
+    padding: 30px;
+    height: 100px;
+    backdrop-filter: none;
+    border-bottom: transparent;
+    box-shadow: none;
+
+    .navItem {
+      color: white !important;
+      border-bottom: none;
+
+      &.button {
+        border: rgba(245, 245, 245, 0.482) 1px solid;
+      }
+      &.active {
+        // background-color: $color-blue-2;
+        color: white;
+      }
+    }
+    .navDropdown {
+      .navDropdownText {
+        color: white !important;
+      }
+      .navDropdownContent {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
