@@ -31,45 +31,35 @@ export const navigationData: {
 } = {
   home: {
     path: "/",
-    pageTitle: "Truthcasting",
-    pageDescription: "Truthcasting",
+    pageTitle: "ShepherdCMS",
+    pageDescription: "ShepherdCMS",
     hidden: true,
-
-    pageHeader: {
-      backgroundSrc: "https://s3.us-east-1.wasabisys.com/truthcasting/SaltShakerMedia/videos/TruthcastingAd3.mp4",
-      buttonText: "Start your free trial!",
-      buttonLink: `https://auth.truthcasting.com/signup` + (partner ? "?partner=" + partner : ""),
-      title: "Christian Livestreaming",
-      subTitle: "Bringing the word to you",
-      isSmall: false,
-      isVideo: true,
-    },
   },
 
-  pricing: {
-    path: "/pricing",
-    pageTitle: "Pricing",
-    pageDescription: "Truthcasting",
+  // pricing: {
+  //   path: "/pricing",
+  //   pageTitle: "Pricing",
+  //   pageDescription: "ShepherdCMS",
 
-    pageHeader: {
-      backgroundSrc:
-        "https://www.worshiphousemedia.com/church-media-blog/wp-content/uploads/2021/03/pexels-shelagh-murphy-1666816-scaled.jpg",
-      title: "Pricing",
-      isSmall: true,
-    },
-  },
-  about: {
-    path: "/about",
-    pageTitle: "About",
-    pageDescription: "Truthcasting",
+  //   pageHeader: {
+  //     backgroundSrc:
+  //       "https://www.worshiphousemedia.com/church-media-blog/wp-content/uploads/2021/03/pexels-shelagh-murphy-1666816-scaled.jpg",
+  //     title: "Pricing",
+  //     isSmall: true,
+  //   },
+  // },
+  // about: {
+  //   path: "/about",
+  //   pageTitle: "About",
+  //   pageDescription: "Truthcasting",
 
-    pageHeader: {
-      backgroundSrc:
-        "https://images.ctfassets.net/lwoaet07hh7w/5S23etSZ9BHGedxvtDWTXn/9b1e9a1a36480379ccacdb06d7714187/BethelSongsnew.jpg",
-      title: "About",
-      isSmall: true,
-    },
-  },
+  //   pageHeader: {
+  //     backgroundSrc:
+  //       "https://images.ctfassets.net/lwoaet07hh7w/5S23etSZ9BHGedxvtDWTXn/9b1e9a1a36480379ccacdb06d7714187/BethelSongsnew.jpg",
+  //     title: "About",
+  //     isSmall: true,
+  //   },
+  // },
 
   // resources: {
   //   pageTitle: "Resources",
