@@ -16,9 +16,9 @@ const Home = () => {
           <p className={styles.headerText}>
             ShepherdCMS is the ultimate church management solution designed for ministries seeking to streamline their
             operations and focus on what truly matters—building their community and spreading the Word. With
-            ShepherdCMS, you'll enjoy a suite of tools tailored to meet the unique needs of your church. From seamless
-            digital check-ins for visitors and members to efficient event planning, volunteer coordination, and church
-            membership tracking, ShepherdCMS empowers your ministry to thrive.
+            ShepherdCMS, you&apos;ll enjoy a suite of tools tailored to meet the unique needs of your church. From
+            seamless digital check-ins for visitors and members to efficient event planning, volunteer coordination, and
+            church membership tracking, ShepherdCMS empowers your ministry to thrive.
           </p>
         </div>
       </div>
@@ -52,9 +52,9 @@ const Home = () => {
           {/* header */}
           <h3 className={styles.pointHeader}>Connect to your Congregants</h3>
           <p className={styles.pointText}>
-            The Simple Check-In app enables automatic management of your members! As members check in, you're alerted;
-            with our connectivity tools, you can receive prayer requests, volunteer sign-ups, and event registrations,
-            making it easier for your members to connect with the body of Christ.
+            The Simple Check-In app enables automatic management of your members! As members check in, you&apos;re
+            alerted; with our connectivity tools, you can receive prayer requests, volunteer sign-ups, and event
+            registrations, making it easier for your members to connect with the body of Christ.
           </p>
         </div>
         <div className={styles.point}>
@@ -70,8 +70,8 @@ const Home = () => {
           <h3 className={styles.pointHeader}>Affordable</h3>
           <p className={styles.pointText}>
             Other platforms may be costly, but ShepherdCMS is tailored to let you choose the features that are most
-            important to you and your church, while disregarding those you don't need. This customization keeps your
-            rates ideal for your church, saving you money and contributing to financial growth.
+            important to you and your church, while disregarding those you don&apos;t need. This customization keeps
+            your rates ideal for your church, saving you money and contributing to financial growth.
           </p>
         </div>
       </div>
@@ -156,7 +156,7 @@ const Home = () => {
           <h2 className={styles.boxHeader}>Unparralled support!</h2>
           <p className={styles.boxText}>
             We take our mission very seriously, ShepherdCMS is backed by a dedicated creator who understands the
-            importance of ministry tools that work seamlessly. As fellow Christians, we’re committed to providing
+            importance of ministry tools that work seamlessly. As fellow Christians, we&apos;re committed to providing
             unmatched, personalized support to ensure your ministry thrives without disruptions.
           </p>
           <Link href="/features">
@@ -167,9 +167,9 @@ const Home = () => {
       <div className={`${styles.infoContainer} ${styles.specialContainer}`}>
         <h2 className={styles.specialHeader}>Early Adopters Special!</h2>
         <p className={styles.specialText}>
-          ShepherdCMS is still in its initial phase rollout, There's bound to be bugs and a lack of initial features,
-          but we're working everyday to bring you a product worthy of your mission and appreciation. We won’t stop until
-          ShepherdCMS is a product that glorifies the kingdom of God!
+          ShepherdCMS is still in its initial phase rollout, There&apos;s bound to be bugs and a lack of initial
+          features, but we&apos;re working everyday to bring you a product worthy of your mission and appreciation. We
+          won&apos;t stop until ShepherdCMS is a product that glorifies the kingdom of God!
         </p>
         <p className={styles.specialText}>
           By joining today, you lock in our <strong>Early Adopters Special</strong> (When you sign up for a year
@@ -180,9 +180,9 @@ const Home = () => {
         <div className={styles.subcontainer}>
           <h2 className={styles.boxHeader}>Join the ShepherdCMS Community Today!</h2>
           <p className={styles.boxText}>
-            Whether you’re a small congregation or a growing ministry, ShepherdCMS is your trusted partner in leading
-            and managing your church effectively. Start now and experience the difference of having a tool that’s as
-            dedicated to your mission as you are.
+            Whether you&apos;re a small congregation or a growing ministry, ShepherdCMS is your trusted partner in
+            leading and managing your church effectively. Start now and experience the difference of having a tool
+            that&apos;s as dedicated to your mission as you are.
           </p>
           <p className={styles.boxText}>
             <strong>ShepherdCMS</strong> — Because ministry deserves more than spreadsheets.
