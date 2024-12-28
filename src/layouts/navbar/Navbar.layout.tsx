@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./Navbar.module.scss";
-import Link from "next/link";
-import Image from "next/image";
+import Link from "next/link"; 
 import { navigationData, Page, useNavigationStore } from "@/data/navbarnav";
 import { IoIosArrowDown } from "react-icons/io";
 import { usePathname } from "next/navigation";

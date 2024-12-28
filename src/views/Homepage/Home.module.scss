@@ -11,10 +11,18 @@
       z-index: 1;
       position: relative;
 
+      @include mobile {
+        margin: 5rem 0;
+      }
+
       .header {
         font-size: 3.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
+
+        @include mobile {
+          font-size: 2rem;
+        }
       }
       .subheader {
         font-size: 2rem;
@@ -40,17 +48,6 @@
   }
   .infoContainer {
     @extend .backgroundContainers;
-
-    .specialHeader {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-    .specialText {
-      font-size: 1.25rem;
-      font-weight: 500;
-      width: 50%;
-    }
   }
   .pointsContainer {
     display: flex;
@@ -61,6 +58,9 @@
     color: var(--dark);
     gap: 20px;
 
+    @include mobile {
+      flex-direction: column;
+    }
     .point {
       display: flex;
       flex-direction: column;
@@ -96,8 +96,15 @@
       color: white;
       flex-direction: row-reverse;
 
+      @include mobile {
+        flex-direction: column;
+      }
       .subcontainer {
         align-items: flex-end;
+
+        @include mobile {
+          align-items: center;
+        }
 
         &:nth-child(odd) {
           align-items: flex-start;
@@ -105,8 +112,16 @@
 
         .boxText {
           text-align: end;
+
+          @include mobile {
+            text-align: center;
+          }
         }
       }
+    }
+
+    @include mobile {
+      flex-direction: column;
     }
 
     .subcontainer {
@@ -116,6 +131,11 @@
       gap: 20px;
       flex: 1;
 
+      @include mobile {
+        align-items: center;
+        justify-content: center;
+      }
+
       &:nth-child(odd) {
         align-items: flex-end;
       }
@@ -123,17 +143,32 @@
       img {
         object-fit: cover;
         border-radius: 20px;
+
+        @include mobile {
+          width: 100%;
+          border-radius: 0;
+        }
       }
 
       .boxHeader {
         font-size: 3rem;
         font-weight: 700;
+
+        @include mobile {
+          font-size: 2rem;
+        }
       }
       .boxText {
         text-align: left;
         font-size: 1.2rem;
         font-weight: 500;
         width: 50%;
+
+        @include mobile {
+          width: 100%;
+          text-align: center;
+          font-size: 1rem;
+        }
       }
       .boxButton {
         background-color: var(--primary);
@@ -157,6 +192,26 @@
     gap: 20px;
     background-color: whitesmoke;
     color: var(--dark);
+
+    .specialHeader {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+    .specialText {
+      font-size: 1.25rem;
+      font-weight: 500;
+      width: 50%;
+
+      @include mobile {
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
   }
   .callToActionContainer {
     background-color: var(--dark);
@@ -167,13 +222,21 @@
       align-items: center;
       gap: 30px;
 
-      .boxHeader{
+      .boxHeader {
         font-size: 3.5rem;
         font-weight: 700;
+
+        @include mobile {
+          font-size: 2rem;
+        }
       }
       .boxText {
         font-size: 1.5rem;
         font-weight: 300;
+
+        @include mobile {
+          font-size: 1rem;
+        }
       }
       .boxButton {
         background-color: var(--primary);

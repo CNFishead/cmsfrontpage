@@ -36,12 +36,20 @@
         width: 100%;
         max-width: 100px;
         height: 100%;
+
+        @include mobile {
+          max-width: 50px;
+        }
       }
     }
     span {
       font-size: 20px;
       font-weight: 900;
       color: white;
+
+      @include mobile {
+        display: none;
+      }
     }
   }
   .hamburgerMenu {
