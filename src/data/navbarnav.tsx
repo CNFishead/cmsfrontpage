@@ -71,26 +71,20 @@ export const navigationData: {
     },
   },
 
-  resources: {
-    pageTitle: "Resources",
-    menu: [
-      {
-        pageTitle: "Support",
-        path: "https://blog.truthcasting.com/",
-        external: true,
-      },
-      {
-        path: "/faq",
-        pageTitle: "FAQ",
-      },
-    ],
-  },
-
-  stream: {
-    pageTitle: "Stream",
-    path: "https://stream.truthcasting.com/",
-    external: true,
-  },
+  // resources: {
+  //   pageTitle: "Resources",
+  //   menu: [
+  //     {
+  //       pageTitle: "Support",
+  //       path: "https://blog.shepherdcms.com/",
+  //       external: true,
+  //     },
+  //     {
+  //       path: "/faq",
+  //       pageTitle: "FAQ",
+  //     },
+  //   ],
+  // },
   "terms-of-use": {
     path: "/terms-of-use",
     pageTitle: "Terms of Use",
@@ -126,8 +120,8 @@ export const navigationData: {
     },
   },
   login: {
-    path: `https://auth.truthcasting.com` + (partner ? "?partner=" + partner : ""),
-    pageTitle: "Login",
+    path: `https://auth.shepherdcms.org` + (partner ? "?partner=" + partner : ""),
+    pageTitle: "Get Started",
     button: true,
   },
 };

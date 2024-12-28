@@ -12,7 +12,7 @@
       position: relative;
 
       .header {
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
       }
@@ -36,6 +36,159 @@
       z-index: 0;
       opacity: 0.6;
       background-color: var(--dark);
+    }
+  }
+  .infoContainer {
+    @extend .backgroundContainers;
+
+    .specialHeader {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .specialText {
+      font-size: 1.25rem;
+      font-weight: 500;
+      width: 50%;
+    }
+  }
+  .pointsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quaternary-lighter);
+    color: var(--dark);
+    gap: 20px;
+
+    .point {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      height: 100%;
+      width: 100%;
+
+      .pointHeader {
+        font-size: 1.5rem;
+      }
+      .pointText {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      .pointIcon {
+        background-color: var(--primary);
+        color: white;
+        border-radius: 50%;
+      }
+    }
+  }
+  .boxContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: var(--quaternary-lighter);
+    color: var(--dark);
+
+    // every other box will have a different background color
+    &:nth-child(odd) {
+      background-color: var(--dark) !important;
+      color: white;
+      flex-direction: row-reverse;
+
+      .subcontainer {
+        align-items: flex-end;
+
+        &:nth-child(odd) {
+          align-items: flex-start;
+        }
+
+        .boxText {
+          text-align: end;
+        }
+      }
+    }
+
+    .subcontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1;
+
+      &:nth-child(odd) {
+        align-items: flex-end;
+      }
+
+      img {
+        object-fit: cover;
+        border-radius: 20px;
+      }
+
+      .boxHeader {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      .boxText {
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 50%;
+      }
+      .boxButton {
+        background-color: var(--primary);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: var(--primary-dark);
+        }
+      }
+    }
+  }
+  .specialContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: whitesmoke;
+    color: var(--dark);
+  }
+  .callToActionContainer {
+    background-color: var(--dark);
+    color: white;
+    .subcontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      .boxHeader{
+        font-size: 3.5rem;
+        font-weight: 700;
+      }
+      .boxText {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+      .boxButton {
+        background-color: var(--primary);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: var(--primary-dark);
+        }
+      }
     }
   }
 }
