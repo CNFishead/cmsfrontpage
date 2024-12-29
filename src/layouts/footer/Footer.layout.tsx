@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./Footer.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
         {/* Left Section */}
         <div className={styles.leftSection}>
           <div className={styles.logoContainer}>
-            <img src="/images/ShepherdsCMSLogo.png" alt="Logo" className={styles.logo} />
+            <Image src="/images/ShepherdsCMSLogo.png" alt="Logo" className={styles.logo} width={50} height={50} />
           </div>
           <p className={styles.missionStatement}>
             ShepherdCMS, the online multi-tool for churches and ministries in the United States.

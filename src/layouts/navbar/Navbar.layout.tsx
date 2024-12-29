@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { FiExternalLink } from "react-icons/fi";
 import { BsPersonCircle } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Image from "next/image";
 
 const Navbar = () => {
   const [touchingTop, setTouchingTop] = React.useState(true);
@@ -37,10 +38,12 @@ const Navbar = () => {
     <div className={`${styles.navigationBar} ${touchingTop && !hamburgerMenuIsOpen ? styles.touchingTop : ""}`}>
       <div className={styles.logoContainer}>
         <Link className={styles.logo} href={"/"}>
-          <img
+          <Image
             style={{ objectFit: "contain" }}
             src={touchingTop && !hamburgerMenuIsOpen ? "/images/ShepherdsCMSLogo.png" : "/images/ShepherdsCMSLogo.png"}
             alt="logo"
+            width={50}
+            height={50}
           />
         </Link>
         <span>ShepherdCMS</span>

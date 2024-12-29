@@ -27,7 +27,7 @@ export default function Pricing({ features }: any) {
         </h2>
         <p>
           Build your own plan with our flexible pricing options and choose features independently to create a plan that
-          fits your church's unique requirements.
+          fits your church&apos;s unique requirements.
         </p>
       </div>
 
