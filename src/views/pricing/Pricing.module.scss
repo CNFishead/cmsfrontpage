@@ -1,0 +1,140 @@
+@use "@/styles/globals.scss" as *;
+
+.pricingPage {
+  // padding: 2rem;
+
+  .header {
+    @extend .backgroundContainers;
+    background-image: url("/images/Hexagon.svg");
+    background-position: 50% 50%;
+    // background image max width is 970px
+    background-size: cover;
+    text-align: center;
+    position: relative; // Required for the blur overlay
+
+    h1 {
+      font-size: 2.5rem;
+      color: white;
+      position: relative; // Ensures text stays on top of the blur
+      z-index: 2; // Keeps text above the blur effect
+    }
+
+    p {
+      font-size: 1.2rem;
+      position: relative; // Ensures text stays on top of the blur
+      z-index: 2; // Keeps text above the blur effect
+    }
+
+    .ctaButton {
+      background-color: var(--primary-light);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      margin: 2% 0;
+      border-radius: 10px;
+      z-index: 2;
+      position: relative;
+      &:hover {
+        background-color: var(--primary-dark);
+      }
+    }
+
+    // Blur Overlay
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%; // Adjust based on how far up the blur should go
+      background: linear-gradient(
+        to top,
+        rgba(var(--primary-rgb), 0.9),
+        rgba(var(--primary-dark-rgb), 0.1)
+      ); // Adjust gradient colors
+      filter: blur(10px); // Adjust blur intensity
+      z-index: 1; // Ensure it's below text
+    }
+  }
+  .ctaContainer {
+    @extend .backgroundContainers;
+    min-height: 20rem;
+    text-align: center;
+    background-color: whitesmoke;
+    color: var(--dark);
+
+    h2 {
+      font-size: 2rem;
+      margin: 2rem 0;
+
+      .ctaText {
+        font-size: 2.5rem;
+        color: var(--primary);
+      }
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .pricingTable {
+    @extend .backgroundContainers;
+    margin-top: 2rem;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th,
+      td {
+        border: 1px solid var(--primary);
+        text-align: center;
+        padding: 0.8rem;
+      }
+
+      th {
+        background-color: var(--primary-light);
+      }
+    }
+  }
+}
+
+.featuresSection {
+  @extend .backgroundContainers;
+  background-image: url("/images/lines.svg");
+  text-align: center;
+
+  .featureGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+
+    .selectedFeatures {
+      margin-top: 2rem;
+      text-align: center;
+
+      h3 {
+        font-size: 1.2rem;
+        color: var(--secondary-dark);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        font-size: 1rem;
+        color: var(--primary-dark);
+      }
+    }
+  }
+}

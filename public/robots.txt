@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.shepherdcms.org/
+Sitemap: https://www.shepherdcms.org/pricing
+Sitemap: https://www.shepherdcms.org/about

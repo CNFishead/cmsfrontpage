@@ -103,8 +103,8 @@ const Home = () => {
           <Image
             width={500}
             height={500}
-            src="https://res.cloudinary.com/wulfdev/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1735241844/DALL_E-2024-12-08-09.42.20-An-illustration-of-a-serene-church-scene-showcasing-diverse-people-in-a-community-setting.-The-focus-is-on-modern-technology-blending-with-traditiona_awgnl8.webp"
-            alt="hero-image"
+            src="https://res.cloudinary.com/wulfdev/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1735241828/DALL_E-2024-12-08-09.43.58-A-vibrant-illustration-showing-a-church-office-with-a-team-of-administrators-and-volunteers-using-technology-to-manage-tasks-efficiently.-The-scene-in_si8vj4.webp"
+            alt="hero-image-2"
             className={styles.heroImage}
           />
         </div>
@@ -126,7 +126,7 @@ const Home = () => {
             width={500}
             height={500}
             src="https://res.cloudinary.com/wulfdev/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1735241817/DALL_E-2024-12-08-09.48.23-An-illustration-of-a-family-sitting-in-a-church-pew-using-a-mobile-app-to-check-in.-The-family-includes-two-parents-and-two-children-smiling-and-enga_jxk5sd.webp"
-            alt="hero-image"
+            alt="hero-image-3"
             className={styles.heroImage}
           />
         </div>
@@ -148,7 +148,7 @@ const Home = () => {
             width={500}
             height={500}
             src="https://res.cloudinary.com/wulfdev/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1735241803/DALL_E-2024-12-08-10.02.00-An-illustration-depicting-a-warm-and-approachable-customer-support-scenario.-A-smiling-individual-sits-at-a-desk-with-a-computer-engaging-with-a-chur_tgcopf.webp"
-            alt="hero-image"
+            alt="hero-image-4"
             className={styles.heroImage}
           />
         </div>

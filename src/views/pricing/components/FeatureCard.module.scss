@@ -1,0 +1,49 @@
+.featureCard {
+  background: whitesmoke;
+  border-radius: 12px;
+  padding: 10%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+  }
+
+  .price {
+    font-size: 1.2rem;
+    color: var(--secondary-dark);
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+  }
+
+  .selectButton {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: var(--primary-dark);
+    }
+  }
+}

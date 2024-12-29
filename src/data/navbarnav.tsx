@@ -36,18 +36,18 @@ export const navigationData: {
     hidden: true,
   },
 
-  // pricing: {
-  //   path: "/pricing",
-  //   pageTitle: "Pricing",
-  //   pageDescription: "ShepherdCMS",
+  pricing: {
+    path: "/pricing",
+    pageTitle: "Pricing",
+    pageDescription: "ShepherdCMS",
 
-  //   pageHeader: {
-  //     backgroundSrc:
-  //       "https://www.worshiphousemedia.com/church-media-blog/wp-content/uploads/2021/03/pexels-shelagh-murphy-1666816-scaled.jpg",
-  //     title: "Pricing",
-  //     isSmall: true,
-  //   },
-  // },
+    pageHeader: {
+      backgroundSrc:
+        "https://www.worshiphousemedia.com/church-media-blog/wp-content/uploads/2021/03/pexels-shelagh-murphy-1666816-scaled.jpg",
+      title: "Pricing",
+      isSmall: true,
+    },
+  },
   // about: {
   //   path: "/about",
   //   pageTitle: "About",
