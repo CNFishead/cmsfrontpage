@@ -9,6 +9,10 @@ export default async function Page() {
     params: {
       filterOptions: 'isInactive;false|reliesOn;{"$exists":false}',
     },
+    // Force the request to bypass Next.js caching
+    headers: {
+      "Cache-Control": "no-store",
+    },
   });
 
   return <Pricing features={data.payload} />;

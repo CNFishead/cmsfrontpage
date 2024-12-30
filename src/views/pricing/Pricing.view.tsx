@@ -37,7 +37,7 @@ export default function Pricing({ features }: any) {
         <div className={styles.grid}>
           <div className={styles.featuresGrid}>
             {features?.map((feature: any) => (
-              <FeatureCard key={feature.id} {...feature} />
+              <FeatureCard key={feature._id} {...feature} />
             ))}
           </div>
         </div>
