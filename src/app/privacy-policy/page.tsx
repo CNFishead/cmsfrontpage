@@ -7,7 +7,7 @@ export default async function Page() {
     url: `/legal`,
     method: "GET",
     params: {
-      filterOptions: 'type;terms',
+      filterOptions: 'type;privacy',
     },
     // Force the request to bypass Next.js caching
     headers: {

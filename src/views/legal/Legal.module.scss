@@ -1,0 +1,48 @@
+@use "@/styles/globals.scss" as *;
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .headerContainer{
+    @extend .backgroundContainers;
+    background-color: var(--primary);
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+
+    .header{
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .subHeader{
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+  .contentContainer{ 
+    background-color: var(--quaternary-lighter);
+    color: var(--dark);
+    padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .content{
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 80%;
+    }
+
+  }
+}
