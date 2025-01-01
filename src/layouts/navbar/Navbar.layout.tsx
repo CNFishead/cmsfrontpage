@@ -45,8 +45,8 @@ const Navbar = () => {
             width={50}
             height={50}
           />
-        </Link>
         <span>ShepherdCMS</span>
+        </Link>
       </div>
       <div className={`${styles.navigation} ${hamburgerMenuIsOpen ? styles.hamburgerMenuIsOpen : ""}`}>
         {Object.values(navigationData)

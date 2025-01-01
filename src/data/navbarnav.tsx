@@ -40,26 +40,12 @@ export const navigationData: {
     path: "/pricing",
     pageTitle: "Pricing",
     pageDescription: "ShepherdCMS",
-
-    pageHeader: {
-      backgroundSrc:
-        "https://www.worshiphousemedia.com/church-media-blog/wp-content/uploads/2021/03/pexels-shelagh-murphy-1666816-scaled.jpg",
-      title: "Pricing",
-      isSmall: true,
-    },
   },
-  // about: {
-  //   path: "/about",
-  //   pageTitle: "About",
-  //   pageDescription: "Truthcasting",
-
-  //   pageHeader: {
-  //     backgroundSrc:
-  //       "https://images.ctfassets.net/lwoaet07hh7w/5S23etSZ9BHGedxvtDWTXn/9b1e9a1a36480379ccacdb06d7714187/BethelSongsnew.jpg",
-  //     title: "About",
-  //     isSmall: true,
-  //   },
-  // },
+  about: {
+    path: "/about",
+    pageTitle: "About",
+    pageDescription: "Truthcasting",
+  },
 
   // resources: {
   //   pageTitle: "Resources",
