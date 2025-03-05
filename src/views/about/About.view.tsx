@@ -79,8 +79,8 @@ const About = () => {
       {/* Call to Action */}
       <section className={styles.cta}>
         <h2>Join Us on Our Mission</h2>
-        <p>Want to learn more? Schedule a demo today.</p>
-        <a href="/contact">Contact Us</a>
+        <p>Signup today and start your 2-Week Free trial!</p>
+        <a href="https://auth.shepherdcms.org/signup">Signup</a>
       </section>
     </div>
   );

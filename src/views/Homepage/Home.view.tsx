@@ -92,7 +92,7 @@ const Home = () => {
             We understand the unique challenges churches face. ShepherdCMS is purpose-built to lighten the
             administrative load, so your team can focus on ministry.
           </p>
-          <Link href="/features">
+          <Link href="/pricing">
             <button className={styles.boxButton}>Learn More</button>
           </Link>
         </div>
@@ -114,7 +114,7 @@ const Home = () => {
             Simplify how you manage your congregation, events, and volunteers. Less time on logistics means more time
             making an impact.
           </p>
-          <Link href="/features">
+          <Link href="/pricing">
             <button className={styles.boxButton}>Learn More</button>
           </Link>
         </div>
@@ -136,7 +136,7 @@ const Home = () => {
             Ensure everyone feels welcome and connected with features like QR code check-ins, making the process easy
             and engaging for visitors and regulars alike.
           </p>
-          <Link href="/features">
+          <Link href="/pricing">
             <button className={styles.boxButton}>Learn More</button>
           </Link>
         </div>
@@ -159,7 +159,7 @@ const Home = () => {
             importance of ministry tools that work seamlessly. As fellow Christians, we&apos;re committed to providing
             unmatched, personalized support to ensure your ministry thrives without disruptions.
           </p>
-          <Link href="/features">
+          <Link href="/pricing">
             <button className={styles.boxButton}>Learn More</button>
           </Link>
         </div>
