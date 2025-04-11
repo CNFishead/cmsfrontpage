@@ -1,0 +1,24 @@
+.earlyAdopter {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  text-align: center;
+  border-top: 3px solid var(--primary-dark);
+  border-bottom: 3px solid var(--primary-dark);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: var(--quaternary-light);
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.125rem;
+  color: var(--quaternary-light);
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
