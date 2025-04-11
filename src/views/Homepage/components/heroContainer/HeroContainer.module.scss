@@ -1,0 +1,67 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://cdn.prod.website-files.com/5f6b9a421d5a61e1d0cd9e3d/67ec0e24a3b0bb193e0604c8_ai-bible-study-tithely.jpg")
+    center/cover no-repeat;
+  text-align: center;
+  padding: 2rem;
+} 
+
+.heroOverlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2.5rem 3rem;
+  border-radius: 1rem;
+  color: #fff;
+  max-width: 900px;
+  margin: auto;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.cta {
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  background-color: #ffc107;
+  color: #000;
+  transition: background 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #e6ac00;
+    transform: translateY(-2px);
+  }
+}
+.heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.5) blur(2px);
+}
