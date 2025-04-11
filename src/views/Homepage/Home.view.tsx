@@ -5,6 +5,7 @@ import FeaturesContainer from "./components/features/FeaturesContainer.component
 import ContentBlock from "./components/contentBlock/ContentBlock.component";
 import { ContentType, default as data } from "./components/contentBlock/contentdata";
 import EarlyAdopterSection from "./components/earlyAdopterSpecial/EarlyAdopterSpecial.component";
+import CallToActionSection from "./components/ctaSection/CallToActionSection.component";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
         />
       ))}
       <EarlyAdopterSection />
+      <CallToActionSection />
     </div>
   );
 };

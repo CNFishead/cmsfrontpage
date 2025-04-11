@@ -8,15 +8,12 @@ const nextConfig: NextConfig = {
   },
   images: {
     remotePatterns: [
+      // allow any domain
       {
         protocol: "https",
-        hostname: "res.cloudinary.com",
-        pathname: "/**/*",
-      }, // Include all images from res.cloudinary.com
-      {
-        protocol: "https",
-        hostname: "i.postimg.cc",
-        pathname: "/**/*",
+        hostname: "**",
+        port: "",
+        pathname: "**",
       },
     ],
   },
