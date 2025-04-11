@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         hostname: "res.cloudinary.com",
         pathname: "/**/*",
       }, // Include all images from res.cloudinary.com
+      {
+        protocol: "https",
+        hostname: "i.postimg.cc",
+        pathname: "/**/*",
+      },
     ],
   },
 };
