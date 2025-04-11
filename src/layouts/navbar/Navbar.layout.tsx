@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { IoIosArrowDown } from "react-icons/io";
 import { FiExternalLink } from "react-icons/fi";
 import { BsPersonCircle } from "react-icons/bs";
-import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import { RxHamburgerMenu, RxCross2, RxChevronRight } from "react-icons/rx";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -111,7 +111,14 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          >
+          > 
+            <button
+              className={styles.collapseButton}
+              onClick={() => setHamburgerMenuIsOpen(false)}
+              aria-label="Close menu"
+            >
+              <RxChevronRight />
+            </button>
             {Object.values(navigationData)
               .filter((item) => !item.hidden)
               .map((item) =>
