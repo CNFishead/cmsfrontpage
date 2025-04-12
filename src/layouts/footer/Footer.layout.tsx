@@ -17,7 +17,8 @@ const Footer = () => {
             className={styles.logo}
           />
           <p className={styles.mission}>
-            ShepherdCMS helps churches and ministries connect meaningfully with their communities. Built with love by believers.
+            ShepherdCMS helps churches and ministries connect meaningfully with their communities. Built with love by
+            believers.
           </p>
         </div>
 
@@ -46,16 +47,19 @@ const Footer = () => {
         <div className={styles.socialSection}>
           <h4>Follow Us</h4>
           <div className={styles.socialIcons}>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/profile.php?id=61571062931984"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <Image src="/icons/facebook.svg" alt="Facebook" width={24} height={24} />
             </a>
           </div>
         </div>
       </div>
 
-      <div className={styles.bottomNote}>
-        &copy; {new Date().getFullYear()} ShepherdCMS. All rights reserved.
-      </div>
+      <div className={styles.bottomNote}>&copy; {new Date().getFullYear()} ShepherdCMS. All rights reserved.</div>
     </footer>
   );
 };
