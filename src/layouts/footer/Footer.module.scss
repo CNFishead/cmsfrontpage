@@ -102,20 +102,46 @@
   width: 100%;
 }
 
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .innerContainer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 2rem;
+  }
+
+  .brandSection,
+  .socialSection {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    flex: 1 1 100%;
   }
 
   .linkGroups {
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
+    flex: 1 1 100%;
+    width: 100%;
+    gap: 1.5rem;
+
+    .linkColumn {
+      width: 100%;
+      max-width: 280px;
+      align-items: center;
+
+      h4 {
+        margin-bottom: 0.25rem;
+      }
+
+      a {
+        font-size: 0.95rem;
+      }
+    }
   }
 
-  .socialSection {
-    margin-top: 1rem;
+  .bottomNote {
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
   }
 }
