@@ -16,7 +16,7 @@ const AboutCTA = () => {
       <div className={styles.wrapper}>
         <h2>Your Ministry Deserves More</h2>
         <p>
-          Whether you're just starting out or leading a growing church, ShepherdCMS is here to support your calling.
+          Whether you&apos;re just starting out or leading a growing church, ShepherdCMS is here to support your calling.
           Join the churches already using ShepherdCMS and start your 2-week free trial today.
         </p>
         <Link href="https://auth.shepherdcms.org/signup">

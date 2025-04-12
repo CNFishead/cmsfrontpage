@@ -16,7 +16,7 @@ const CallToActionSection = () => {
       <div className={styles.container}>
         <h2 className={styles.title}>Join the ShepherdCMS Community Today!</h2>
         <p className={styles.text}>
-          Whether you're a small congregation or a growing ministry, ShepherdCMS is your trusted partner in leading and
+          Whether you&apos;re a small congregation or a growing ministry, ShepherdCMS is your trusted partner in leading and
           managing your church effectively.
         </p>
         <p className={styles.text}>

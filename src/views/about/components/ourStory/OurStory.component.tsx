@@ -15,7 +15,7 @@ const OurStory = () => {
       <div className={styles.wrapper}>
         <p>
           ShepherdCMS was created because we believe that Christian products should be Christian-run. Too often, large
-          companies lose sight of who they're serving and the deeper purpose behind their work.
+          companies lose sight of who they&apos;re serving and the deeper purpose behind their work.
         </p>
         <p>
           As Christians, we understand the profound importance of ministry for pastors — the responsibility, the
