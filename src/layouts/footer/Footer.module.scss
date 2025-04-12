@@ -1,86 +1,121 @@
-@use "@/styles/globals.scss" as *;
+@use "sass:color";
 
-// Footer.module.scss
 .footer {
+  background-color: var(--dark);
+  color: var(--quaternary-light);
+  padding: 3rem 1.5rem 2rem;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 4px solid var(--primary-dark);
+}
+
+.innerContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  background-color: var(--dark);
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
 
-  // light box shadow on top
-  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+.brandSection {
+  flex: 1 1 250px;
+  max-width: 350px;
 
-  @include mobile {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .mission {
+    color: var(--quaternary-lighter);
+    font-weight: 400;
+    line-height: 1.5;
   }
 }
-.contentSection {
-  display: flex;
-  align-items: center;
 
-  @include mobile {
+.linkGroups {
+  display: flex;
+  flex: 2 1 500px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .linkColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h4 {
+      font-size: 1rem;
+      color: var(--primary-light);
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--quaternary-light);
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--quaternary);
+      }
+    }
+  }
+}
+
+.socialSection {
+  flex: 1 1 200px;
+
+  h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-light);
+  }
+
+  .socialIcons {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      display: inline-flex;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        filter: brightness(1.1);
+      }
+    }
+  }
+}
+
+.bottomNote {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--quaternary-dark);
+  text-align: center;
+  border-top: 1px solid var(--primary-dark);
+  padding-top: 1rem;
+  width: 100%;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .innerContainer {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .leftSection {
-    flex: 1;
-    display: flex;
-    gap: 10px;
+
+  .linkGroups {
+    flex-direction: column;
     align-items: center;
-
-    .logoContainer {
-      .logo {
-        max-width: 150px;
-        height: auto;
-      }
-    }
-
-    .missionStatement {
-      font-size: 14px;
-      color: white;
-    }
   }
 
-  .rightSection {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    max-width: 400px;
-
-    @include mobile {
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .navContainer {
-      .title {
-        font-size: 16px;
-        margin-bottom: 10px;
-        color: white;
-      }
-
-      .navList {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        li {
-          margin-bottom: 5px;
-
-          .navItem {
-            text-decoration: none;
-            color: var(--primary-light);
-
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-    }
+  .socialSection {
+    margin-top: 1rem;
   }
 }
