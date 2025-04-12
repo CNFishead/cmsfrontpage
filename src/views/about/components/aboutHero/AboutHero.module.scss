@@ -1,0 +1,40 @@
+@use "@/styles/globals.scss" as *;
+
+.hero {
+  @extend .backgroundContainers;
+  background: linear-gradient(to right, var(--primary-dark), var(--primary));
+  background-image: url("/images/Simple Shiny.svg");
+  background-size: cover;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.content {
+  max-width: 800px;
+
+  h1 {
+    font-size: 2.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #f0f0f0;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

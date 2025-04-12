@@ -1,0 +1,48 @@
+.mission {
+  padding: 4rem 2rem;
+  background-color: var(--quaternary-lighter);
+  color: var(--dark);
+  text-align: center;
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.values {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+
+  li {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+
+    &::before {
+      content: "✓";
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+    }
+
+    strong {
+      color: var(--primary-dark);
+    }
+  }
+}
