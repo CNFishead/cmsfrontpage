@@ -38,7 +38,7 @@ const Navbar = () => {
     setPage((navigationData as any)[pathname.split("/")[1] || "home"]);
   }, [pathname]);
 
-  if (page.fullPage) return null;
+  if (page?.fullPage) return null;
 
   return (
     <header className={`${styles.navigationBar} ${touchingTop && !hamburgerMenuIsOpen ? styles.touchingTop : ""}`}>

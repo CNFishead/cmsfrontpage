@@ -1,9 +1,9 @@
+# *
 User-agent: *
-Disallow:
+Allow: /
 
-# Primary sitemaps
+# Host
+Host: https://www.shepherdcms.org
+
+# Sitemaps
 Sitemap: https://www.shepherdcms.org/sitemap.xml
-Sitemap: https://www.shepherdcms.org/terms-of-use
-Sitemap: https://www.shepherdcms.org/privacy-policy
-Sitemap: https://www.shepherdcms.org/pricing
-Sitemap: https://www.shepherdcms.org/about

@@ -1,0 +1,212 @@
+.planCard {
+  background: whitesmoke;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  border: 2px solid transparent;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  &.mostPopular {
+    border-color: #ffd700;
+    background: linear-gradient(135deg, #fff 0%, #fffbf0 100%);
+    transform: scale(1.05);
+
+    &:hover {
+      transform: scale(1.05) translateY(-5px);
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+  }
+
+  .priceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    > div:first-child {
+      display: flex;
+      align-items: baseline;
+      gap: 0.25rem;
+    }
+
+    .price {
+      font-size: 2rem;
+      color: #333;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .billingCycle {
+      font-size: 1rem;
+      color: #666;
+      margin: 0;
+    }
+
+    .yearlyDetails {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+      margin-top: 0.5rem;
+
+      .originalPrice {
+        font-size: 0.9rem;
+        color: #999;
+        text-decoration: line-through;
+        margin: 0;
+      }
+
+      .savings {
+        font-size: 0.85rem;
+        color: #28a745;
+        font-weight: 600;
+        background: rgba(40, 167, 69, 0.1);
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        margin: 0;
+      }
+    }
+  }
+
+  .descriptionContainer {
+    text-align: center;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+
+  .toggleButton {
+    background: none;
+    border: none;
+    color: #3c6255;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0.25rem 0;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #2d4a3d;
+    }
+  }
+
+  .popularBadge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  }
+
+  .featuresContainer {
+    text-align: left;
+    flex-grow: 1;
+    overflow-y: auto;
+
+    h4 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #333;
+      text-align: center;
+    }
+  }
+  .featuresList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .featureItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .checkmark {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .selectButton {
+    background: #3c6255;
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-weight: 600;
+    margin-top: auto;
+
+    &:hover {
+      background: #2d4a3d;
+    }
+  }
+
+  .mostPopular .selectButton {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #333;
+
+    &:hover {
+      background: linear-gradient(135deg, #ffed4e 0%, #ffd700 100%);
+    }
+  }
+
+  // Responsive design
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 1.5rem;
+
+    &.mostPopular {
+      transform: none;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+
+    .price {
+      font-size: 1.75rem;
+    }
+
+    .popularBadge {
+      font-size: 0.7rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+}

@@ -42,16 +42,17 @@ export const metadata = {
 export default async function Page() {
   // Fetch dynamic features from your backend
   const { data } = await axios({
-    url: `/feature`,
+    url: `/auth/plan`,
     method: "GET",
     params: {
-      filterOptions: 'isInactive;false|reliesOn;{"$exists":false}',
+      filterOptions: 'isActive;true|price;{"$ne":"0"}',
     },
     // Force the request to bypass Next.js caching
     headers: {
       "Cache-Control": "no-store",
     },
   });
+  
 
-  return <Pricing features={data.payload} />;
+  return <Pricing plans={data.payload} />;
 }

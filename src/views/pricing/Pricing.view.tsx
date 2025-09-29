@@ -1,9 +1,21 @@
+"use client";
 // pages/pricing.js
-// import { useState } from "react";
-import FeatureCard from "@/views/pricing/components/FeatureCard.component";
+import { useState } from "react";
+import PlanCard from "@/views/pricing/components/PlanCard.component";
+import { PlanType } from "@/types/IPlan";
 import styles from "./Pricing.module.scss"; // Import your SCSS file
 
-export default function Pricing({ features }: any) {
+interface PricingProps {
+  plans: PlanType[];
+}
+
+export default function Pricing({ plans }: PricingProps) {
+  const [isYearly, setIsYearly] = useState(false);
+
+  // Separate most popular plan from others
+  const mostPopularPlan = plans?.find((plan) => plan.mostPopular);
+  const otherPlans =
+    plans?.filter((plan) => !plan.mostPopular).sort((a, b) => parseFloat(a.price) - parseFloat(b.price)) || [];
   const competitors = [
     { name: "Competitor A", price: "$50/mo", features: ["Feature 1", "Feature 2"] },
     { name: "Competitor B", price: "$60/mo", features: ["Feature 3", "Feature 4"] },
@@ -31,13 +43,40 @@ export default function Pricing({ features }: any) {
         </p>
       </div>
 
-      {/* Features */}
+      {/* Pricing Toggle */}
+      <div className={styles.pricingToggle}>
+        <div className={styles.toggleContainer}>
+          <span className={isYearly ? styles.inactive : styles.active}>Monthly</span>
+          <button
+            className={styles.toggleButton}
+            onClick={() => setIsYearly(!isYearly)}
+            aria-label="Toggle between monthly and yearly pricing"
+          >
+            <div className={`${styles.toggleSlider} ${isYearly ? styles.yearly : styles.monthly}`}></div>
+          </button>
+          <span className={isYearly ? styles.active : styles.inactive}>
+            Yearly <span className={styles.discount}>Save up to 20%</span>
+          </span>
+        </div>
+      </div>
+
+      {/* Featured Plan */}
+      {mostPopularPlan && (
+        <section className={styles.featuredPlanSection}>
+          <h2>Most Popular Plan</h2>
+          <div className={styles.featuredPlanContainer}>
+            <PlanCard key={mostPopularPlan._id} plan={mostPopularPlan} isYearly={isYearly} />
+          </div>
+        </section>
+      )}
+
+      {/* Other Plans */}
       <section className={styles.featuresSection}>
-        <h2>Choose Your Features</h2>
+        <h2>{mostPopularPlan ? "Other Plans" : "Choose Your Plan"}</h2>
         <div className={styles.grid}>
           <div className={styles.featuresGrid}>
-            {features?.map((feature: any) => (
-              <FeatureCard key={feature._id} {...feature} />
+            {otherPlans.map((plan) => (
+              <PlanCard key={plan._id} plan={plan} isYearly={isYearly} />
             ))}
           </div>
         </div>
