@@ -38,8 +38,8 @@ const Footer = () => {
           </div>
           <div className={styles.linkColumn}>
             <h4>Legal</h4>
-            <Link href="/terms-of-use">Terms of Use</Link>
-            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/legal/terms">Terms of Use</Link>
+            <Link href="/legal/privacy">Privacy Policy</Link>
           </div>
         </div>
 
