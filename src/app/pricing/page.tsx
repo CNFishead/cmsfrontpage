@@ -1,5 +1,5 @@
 import Pricing from "@/views/pricing/Pricing.view";
-import axios from "../../../utils/axios";
+import axios from "@/utils/axios";
 
 export const metadata = {
   title: "Pricing — ShepherdCMS",
@@ -52,7 +52,6 @@ export default async function Page() {
       "Cache-Control": "no-store",
     },
   });
-  
 
   return <Pricing plans={data.payload} />;
 }

@@ -1,4 +1,4 @@
-import axios from "../../../../utils/axios";
+import axios from "@/utils/axios";
 import Legal from "@/views/legal/Legal.view";
 import { Metadata } from "next";
 
